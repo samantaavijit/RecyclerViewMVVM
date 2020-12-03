@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="photo"
+            type="com.avijitsamanta.recyclerviewmvvm.data.models.Photo" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/image_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            tools:src="@mipmap/ic_launcher"
+            app:image="@{photo.urls.thumb}" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/image_item"
+            android:background="@drawable/gradient" />
+
+        <TextView
+            android:id="@+id/textId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_item"
+            android:layout_margin="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@{photo.id}"
+            android:textColor="@android:color/white"
+            tools:text="username" />
+
+    </RelativeLayout>
+
+</layout>
+
