@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/photoFragment"
-        android:name="com.avijitsamanta.recyclerviewmvvm.ui.photos.PhotoFragment"
+        android:name="com.avijitsamanta.recyclerviewmvvm.ui.photos.UnsplashPhotoFragment"
         android:label="photo_fragment"
-        tools:layout="@layout/photo_fragment" />
+        tools:layout="@layout/unsplash_photo_fragment" />
 </navigation>

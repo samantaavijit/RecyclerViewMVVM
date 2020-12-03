@@ -1,7 +1,7 @@
 package com.avijitsamanta.recyclerviewmvvm.util
 
-import com.avijitsamanta.recyclerviewmvvm.data.models.Photo
+import com.avijitsamanta.recyclerviewmvvm.data.models.UnsplashPhoto
 
 interface PhotoListener {
-    fun onPhotoClick(photo: Photo)
+    fun onPhotoClick(photo: UnsplashPhoto)
 }

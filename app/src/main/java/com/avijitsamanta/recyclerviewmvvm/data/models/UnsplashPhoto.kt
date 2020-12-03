@@ -1,6 +1,6 @@
 package com.avijitsamanta.recyclerviewmvvm.data.models
 
-data class Photo(
+data class UnsplashPhoto(
     val id: String,
     val urls: Urls
 ) {
